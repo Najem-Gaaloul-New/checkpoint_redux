@@ -34,8 +34,8 @@ h1 {
 
 .complete {
   text-decoration: line-through black ;
-
- /* opacity: 0.4;*/
+  pointer-events: none;
+  opacity: 0.4;
 }
 
 .todo-form {
@@ -108,6 +108,7 @@ h1 {
   padding: 16px;
   border-radius: 5px;
   width: 90%;
+  
 }
 
 .todo-row:nth-child(4n + 1) {
@@ -174,13 +175,11 @@ margin-left: 18px;
 .dropdown {
   
   width: 70px;
-  
   margin-left: 10px;
   position: relative;
-  color: white;
+  color: white  !important;
   text-transform: uppercase;
   font-size: 12px;
- 
   border-radius: 4px;
 }
 .dropdown__select {

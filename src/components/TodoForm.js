@@ -74,7 +74,7 @@ function TodoForm(props) {
           <button className='todo-button' onClick={handleSubmit}>
             Add tod
            </button>
-           <div class="dropdown">
+           <div class="dropdown" >
       <div class="dropdown__select">
         <span class="dropdown__selected">Filter</span>
       </div>
@@ -85,7 +85,7 @@ function TodoForm(props) {
         <li class="dropdown__item" onClick={() => dispatch(filterTodo(true))}>
           <span class="dropdown__text" >Done</span>
         </li>
-        <li class="dropdown__item" onClick={() => dispatch(filterTodo(false))}>
+        <li class="dropdown__item" onClick={() => dispatch(filterTodo(false))} tabindex="-1">
           <span class="dropdown__text" >Not</span>
         </li>
 
